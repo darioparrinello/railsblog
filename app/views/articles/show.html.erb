@@ -3,10 +3,10 @@
         <div class="col-12"> 
         <h1 class="text-center text-shadow text-white fw-bold my-5 pt-5">Dettaglio articolo</h1>
 
-            <div class="card detail my-3">
+            <div class="card detail my-3  px-5 py-5">
                 <h2 class="detail-title"><%= @article.title %></h2>
                 <hr/>
-                <p class="detail-subtitle"><%= @article.description %>
+                <p class="detail-subtitle mt-5 mb-2"><%= @article.description %>
                 </p>
                 <div class="d-flex justify-content-center align-items-center btn-container">
                     <%= link_to 'Edit', edit_article_path(@article), :class => "button"%>

@@ -1,9 +1,8 @@
 <div class="container-fluid home-container">
 
-
   <div class="px-4 py-5 my-5 text-center">
 
-    <img class="d-block home-pic mx-auto my-4 rounded-pill" src="media/darioparrinello.jpeg" alt="" width="300" height="300">
+    <img class="d-block home-pic mx-auto my-4 rounded-pill" src="media/darioparrinello.jpeg" alt="">
     <h1 class="display-2 fw-bold text-shadow mt-4">Dario Parrinello</h1>
     <h2 class="display-5 fw-bold text-shadow mt-3">Web Developer</h2>
 
@@ -14,8 +13,8 @@
 
 
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-5">
-          <button type="button" class="btn btn-home-articles text-light btn-lg px-4 gap-3"><%= link_to 'Articles', articles_path %></button>
-          <button type="button" class="btn btn-outline-secondary text-light btn-lg px-4"><%= link_to 'Contacts', contacts_path %></button>
+          <%= link_to 'Articles', articles_path, :class => "btn btn-home-articles text-light btn-lg px-4 gap-3" %>
+          <%= link_to 'Contacts', contacts_path, :class => "btn btn-outline-secondary text-light btn-lg px-4" %>
       </div>
     </div>
   </div>    
